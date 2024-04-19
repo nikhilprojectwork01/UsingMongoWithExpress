@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Folder</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Chats</h1>
+   <a href="http://localhost:8080/chats/new"> <button>NEW</button></a>
+    <hr/>
+        <% for(datas of data){%>
+            <div class="outer">
+                <div>
+                    <p><%=datas.created_at.toString().split(" ")[4]%></p>
+                <p><%=datas.created_at.toString().split(" ").slice(0,4).join("-")%></p>
+                </div>
+                <p>From:<%=datas.from%></p>
+                <div class="mes">
+                    <p><%=datas.message%></p>
+                </div>
+                <p>Recieved by:<%=datas.to%></p>
+                <hr/>
+                <a href="http://localhost:8080/chats/<%=datas.id%>/edit"><button class="b2">Edit</button></a>
+                <form action="http://localhost:8080/chats/<%=datas.id%>/delete?_method=DELETE" method="post" id="f1">
+                    <button class="b2">Delete</button>
+                </form>
+                <a href="http://localhost:8080/show/<%=datas.id%>"><button>Show</button></a>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>

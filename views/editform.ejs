@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Form</h1>
+    <form method="post" action="http://localhost:8080/chats/<%=info.id%>/add?_method=PATCH">
+        <div>
+        <h3><%=info.from%></h3>
+        </div>
+        <div>
+            <%=info.to%>
+        </div>
+        <div>
+        <textarea rows="5" cols="40" placeholder="enter your message" name="newmessage">
+            <%=info.message%>
+        </textarea>
+    </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

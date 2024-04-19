@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: green;
+    text-align: center;
+}
+div{
+}
+.n1{
+    height: 150px;
+    width: 30%;
+    background-color:dodgerblue;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 5%;
+    
+    color: rgb(0, 0, 0);
+}
+hr{
+    width: 97%;
+}
+.n1 div{
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: rgb(0, 0, 0);
+
+}
+.ne{
+    background-color: aliceblue;
+}
+.ne div{
+    margin-left: 7%;
+}
+form{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    width: 50%;
+}
+input{
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    border-radius: 10px;
+}
+label{
+    margin-left: 50%;
+}
+button{
+    width: 70px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    color: rgb(29, 24, 17);
+}
+input[type="text"]::placeholder{
+    color: black;
+    align-items: center;
+}
+textarea::placeholder{
+    color: black;
+}
+.outer{
+    background-color: rgb(175, 215, 215);
+    margin: 10px;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.mes{
+    background-color: rgb(11, 116, 214);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.b2{
+    background-color: maroon;
+    color: aliceblue;
+}
+#f1{
+    display: inline;
+    border: none;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>welcome back</h1>
+    <form method="post" action="http://localhost:8080/chats/add">
+        <div>
+        <input type="text" placeholder="From / Enter sender name" name="from"/>
+        </div>
+        <div>
+        <input type="text" placeholder="To/Reciever name" name="to"/>
+        </div>
+        <div>
+        <textarea rows="5" cols="40" placeholder="enter your message" name="message">
+        </textarea>
+    </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
